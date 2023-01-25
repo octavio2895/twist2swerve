@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+  <launch>
+    <node pkg="vesc_driver" type="vesc_driver_node" name="motor_a" output="screen" launch-prefix="$(arg launch_prefix)">
+      <param name="can_interface" value="$(arg can_interface)" />
+      <param name="can_dev_id" value="88" />
+    </node>
+  </launch>
